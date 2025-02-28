@@ -23,6 +23,7 @@ import {
 import FormItem from 'antd/es/form/FormItem';
 import Operation from 'antd/es/transfer/operation';
 import ReusableForm from './ResuableForm';
+import Buttons from './Buttons';
 
 const App = () => {
   const architects = ['flwright', 'jbawa', 'zhadid', 'spuri'];
@@ -137,6 +138,7 @@ const App = () => {
 
   return (
     <>
+      <Buttons />
       <Divider style={{ marginBottom: '10px' }}>Date, Month & Time</Divider>
       <DatePicker />
       <DatePicker.MonthPicker />

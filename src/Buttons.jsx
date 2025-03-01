@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "antd";
+import { Button, Divider } from "antd";
 
 export default function Buttons() {
     const [loading, setLoading] = useState(false);
@@ -12,6 +12,7 @@ export default function Buttons() {
     }
     return (
         <>
+            <Divider style={{ marginBottom: '10px'}}>Button Variants</Divider>
             <Button type="primary" block onClick={onButtonClick} loading={loading}>Submit</Button>
             <Button type="dashed" danger block onClick={onButtonClick} loading={loading}>Submit</Button>
             <Button variant="outlined" block color="pink" onClick={onButtonClick} loading={loading}>Submit</Button>

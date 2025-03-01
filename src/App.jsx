@@ -22,32 +22,37 @@ import {
 } from '@ant-design/icons';
 import FormItem from 'antd/es/form/FormItem';
 import Operation from 'antd/es/transfer/operation';
+
+
+
 import ReusableForm from './ResuableForm';
 import Buttons from './Buttons';
 import InputField from './Input';
 import Selection from './Selection';
+import SimpleForm from './SimpleForm';
+
+
 
 const App = () => {
-  const [date, setDate] = useState(null);
+  // const [date, setDate] = useState(null);
 
 
-  const [messageApi, contextHolder] = message.useMessage();
-  const handleChange = (value) => {
-    messageApi.info(
-      `Selected Date: ${value ? value.format('YYYY-MM-DD') : 'None'}`
-    );
-    setDate(value);
-  };
+  // const [messageApi, contextHolder] = message.useMessage();
+  // const handleChange = (value) => {
+  //   messageApi.info(
+  //     `Selected Date: ${value ? value.format('YYYY-MM-DD') : 'None'}`
+  //   );
+  //   setDate(value);
+  // };
 
 
-
-  const [showAlert, setshowAlert] = useState(false);
-  const onFinish = (e) => {
-    console.log(e);
-    setTimeout(() => {
-      setshowAlert(true);
-    }, 2000);
-  };
+  // const [showAlert, setshowAlert] = useState(false);
+  // const onFinish = (e) => {
+  //   console.log(e);
+  //   setTimeout(() => {
+  //     setshowAlert(true);
+  //   }, 2000);
+  // };
 
   const data = [
     {
@@ -136,20 +141,18 @@ const App = () => {
       <Buttons />
       <InputField />
       <Selection />
+      <SimpleForm />
 
 
 
 
-      <Divider style={{ marginBottom: '10px' }}>Date, Month & Time</Divider>
+      {/* <Divider style={{ marginBottom: '10px' }}>Date, Month & Time</Divider>
       <DatePicker />
       <DatePicker.MonthPicker />
-      <TimePicker />
+      <TimePicker /> */}
 
 
-
-
-
-      <Divider style={{ marginBottom: '10px' }}>Form</Divider>
+      {/* <Divider style={{ marginBottom: '10px' }}>Form</Divider>
       {showAlert && (
         <Alert type="error" message="error" description="error on login" />
       )}
@@ -173,7 +176,11 @@ const App = () => {
             Submit
           </Button>
         </Form.Item>
-      </Form>
+      </Form> */}
+
+
+
+    
       <Divider style={{ marginBottom: '20px' }}>Table</Divider>
       <Table dataSource={data} columns={columns}></Table>
       <Divider style={{ marginBottom: '20px' }}>Progress Bars</Divider>

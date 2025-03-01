@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Divider } from "antd";
+import { Button, Divider, Space } from "antd";
 
 export default function Buttons() {
     const [loading, setLoading] = useState(false);
@@ -12,11 +12,13 @@ export default function Buttons() {
     }
     return (
         <>
-            <Divider style={{ marginBottom: '10px'}}>Button Variants</Divider>
-            <Button type="primary" block onClick={onButtonClick} loading={loading}>Submit</Button>
-            <Button type="dashed" danger block onClick={onButtonClick} loading={loading}>Submit</Button>
-            <Button variant="outlined" block color="pink" onClick={onButtonClick} loading={loading}>Submit</Button>
-            <Button variant="filled" block color='cyan' onClick={onButtonClick} loading={loading}>Submit</Button>
+            <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Button Variants</Divider>
+            <Space>
+                <Button type="primary" block onClick={onButtonClick} loading={loading}>Submit</Button>
+                <Button type="dashed" danger block onClick={onButtonClick} loading={loading}>Submit</Button>
+                <Button variant="outlined" block color="pink" onClick={onButtonClick} loading={loading}>Submit</Button>
+                <Button variant="filled" block color='cyan' onClick={onButtonClick} loading={loading}>Submit</Button>
+            </Space>
         </>
     )
 }

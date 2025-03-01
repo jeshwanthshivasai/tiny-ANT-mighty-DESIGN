@@ -7,7 +7,7 @@ export default function SimpleForm() {
     }
     return (
         <>
-            <Divider style={{ marginBottom: '10px'}}>Basic Form</Divider>
+            <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Basic Form</Divider>
             <Form onFinish={onFinish}>
                 <Form.Item label="username" name="username">
                     <Input placeholder="enter username" required></Input>

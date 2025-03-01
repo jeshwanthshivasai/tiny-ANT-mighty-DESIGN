@@ -19,7 +19,7 @@ export default function InputField() {
 
   return (
     <>
-      <Divider style={{ marginBottom: '10px'}}>Simple Input and Submit</Divider>
+      <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Simple Input and Submit</Divider>
       <Space direction="vertical" size="middle" style={{ width:'100%' }}>
         <Input placeholder="Enter your name" maxLength={10} prefix={<UserOutlined />} style={{ marginBottom: '10px' }} allowClear></Input>
       </Space>

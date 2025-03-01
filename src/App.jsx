@@ -30,6 +30,7 @@ import Buttons from './Buttons';
 import InputField from './Input';
 import Selection from './Selection';
 import SimpleForm from './SimpleForm';
+import MyTable from './Table';
 
 
 
@@ -142,7 +143,7 @@ const App = () => {
       <InputField />
       <Selection />
       <SimpleForm />
-
+      <MyTable />
 
 
 

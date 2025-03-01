@@ -6,7 +6,7 @@ export default function Selection() {
 
     return (
         <>
-            <Divider style={{ marginBottom: '10px'}}>Optional Selection</Divider>
+            <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Optional Selection</Divider>
             <h3>Please choose your favourite 🍎 product</h3>
             <h6>{`works when >=5.11.0, recommended ✅`}</h6>
             <Select placeholder='please choose...' mode="multiple" allowClear maxTagCount={2} style={{width:'100%'}} options={apple.map((product => ({

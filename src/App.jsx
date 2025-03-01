@@ -25,9 +25,9 @@ import Operation from 'antd/es/transfer/operation';
 import ReusableForm from './ResuableForm';
 import Buttons from './Buttons';
 import InputField from './Input';
+import Selection from './Selection';
 
 const App = () => {
-  const architects = ['flwright', 'jbawa', 'zhadid', 'spuri'];
   const [date, setDate] = useState(null);
 
 
@@ -135,28 +135,20 @@ const App = () => {
     <>
       <Buttons />
       <InputField />
+      <Selection />
+
+
+
 
       <Divider style={{ marginBottom: '10px' }}>Date, Month & Time</Divider>
       <DatePicker />
       <DatePicker.MonthPicker />
       <TimePicker />
-      <Divider style={{ marginBottom: '10px' }}>Optional Selection</Divider>
-      <p>Who is your favorite architect?</p>
-      <Select
-        placeholder="Select one"
-        mode="multiple"
-        maxTagCount={2}
-        allowClear
-        style={{ width: '100%', marginBottom: '10px' }}
-      >
-        {architects.map((architect, index) => {
-          return (
-            <Select.Option key={index} value={architect}>
-              {architect}
-            </Select.Option>
-          );
-        })}
-      </Select>
+
+
+
+
+
       <Divider style={{ marginBottom: '10px' }}>Form</Divider>
       {showAlert && (
         <Alert type="error" message="error" description="error on login" />

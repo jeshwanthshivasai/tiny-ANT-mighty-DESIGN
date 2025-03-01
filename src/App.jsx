@@ -24,11 +24,12 @@ import FormItem from 'antd/es/form/FormItem';
 import Operation from 'antd/es/transfer/operation';
 import ReusableForm from './ResuableForm';
 import Buttons from './Buttons';
+import InputField from './Input';
 
 const App = () => {
   const architects = ['flwright', 'jbawa', 'zhadid', 'spuri'];
   const [date, setDate] = useState(null);
-  const [loading, setLoading] = useState(false);
+
 
   const [messageApi, contextHolder] = message.useMessage();
   const handleChange = (value) => {
@@ -38,13 +39,7 @@ const App = () => {
     setDate(value);
   };
 
-  const buttonClick = (e) => {
-    console.log('Button Clicked');
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  };
+
 
   const [showAlert, setshowAlert] = useState(false);
   const onFinish = (e) => {
@@ -139,33 +134,12 @@ const App = () => {
   return (
     <>
       <Buttons />
+      <InputField />
+
       <Divider style={{ marginBottom: '10px' }}>Date, Month & Time</Divider>
       <DatePicker />
       <DatePicker.MonthPicker />
       <TimePicker />
-      <Divider style={{ marginBottom: '10px' }}>
-        Simple Input and Submit
-      </Divider>
-      <Space direction="vertical" size="middle">
-        <Input
-          placeholder="Enter your name"
-          maxLength={50}
-          prefix={<UserOutlined />}
-          style={{ marginBottom: '10px' }}
-          allowClear
-        ></Input>
-      </Space>
-      <Tooltip title="submit">
-        <Button
-          style={{ padding: '', backgroundColor: 'black' }}
-          block
-          type="primary"
-          onClick={buttonClick}
-          loading={loading}
-        >
-          Submit
-        </Button>
-      </Tooltip>
       <Divider style={{ marginBottom: '10px' }}>Optional Selection</Divider>
       <p>Who is your favorite architect?</p>
       <Select

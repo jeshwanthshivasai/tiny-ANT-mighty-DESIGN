@@ -14,8 +14,8 @@ export default function Buttons() {
         <>
             <Button type="primary" block onClick={onButtonClick} loading={loading}>Submit</Button>
             <Button type="dashed" danger block onClick={onButtonClick} loading={loading}>Submit</Button>
-            <Button type="outlined" block color="pink" onClick={onButtonClick} loading={loading}>Submit</Button>
-            <Button type="filled" block variant="sucess" onClick={onButtonClick} loading={loading}>Submit</Button>
+            <Button variant="outlined" block color="pink" onClick={onButtonClick} loading={loading}>Submit</Button>
+            <Button variant="filled" block color='cyan' onClick={onButtonClick} loading={loading}>Submit</Button>
         </>
     )
 }

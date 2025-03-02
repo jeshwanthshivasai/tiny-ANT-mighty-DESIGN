@@ -33,6 +33,7 @@ import SimpleForm from './SimpleForm';
 import MyTable from './Table';
 import TimeandDatePicking from './TimeandDate';
 import Spin from './Spinning';
+import ProgressBars from './Progress';
 
 
 
@@ -148,6 +149,7 @@ const App = () => {
       <MyTable />
       <TimeandDatePicking />
       <Spin />
+      <ProgressBars />
       
 
 
@@ -185,34 +187,6 @@ const App = () => {
       </Form> */}
 
 
-
-    
-      <Divider style={{ marginBottom: '20px' }}>Table</Divider>
-      <Table dataSource={data} columns={columns}></Table>
-      <Divider style={{ marginBottom: '20px' }}>Progress Bars</Divider>
-      <Progress
-        percent={60}
-        type="circle"
-        trailColor="grey"
-        strokeColor="black"
-      />
-      <Progress percent={60} type="line" status="success" />
-      <Progress percent={60} type="line" status="active" strokeWidth={20} />
-      <Progress percent={60} type="line" status="exception" />
-      <Progress
-        percent={60}
-        type="dashboard"
-        strokeLinecap="red"
-        strokeWidth={20}
-        strokeColor="green"
-        status="success"
-      />
-      <Divider style={{ marginBottom: '20px' }}>Table</Divider>
-      <Table></Table>
-      <Button type="dashed">Hello</Button>
-      <Button type="link" href="https://www.scholachioma.com">
-        Hello
-      </Button>
       <Divider style={{ marginBottom: '20px' }}>Form Validation</Divider>
       <Form
         labelCol={{ span: 10 }}

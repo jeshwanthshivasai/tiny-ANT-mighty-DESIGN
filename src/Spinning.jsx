@@ -15,7 +15,6 @@ export default function Spinning() {
                     <h6>Hello, World!</h6>
                     <h6>Hello, World!</h6>
                 </div>
-
             </Spin>
         </>
     )

@@ -32,6 +32,7 @@ import Selection from './Selection';
 import SimpleForm from './SimpleForm';
 import MyTable from './Table';
 import TimeandDatePicking from './TimeandDate';
+import Spin from './Spinning';
 
 
 
@@ -146,6 +147,7 @@ const App = () => {
       <SimpleForm />
       <MyTable />
       <TimeandDatePicking />
+      <Spin />
       
 
 

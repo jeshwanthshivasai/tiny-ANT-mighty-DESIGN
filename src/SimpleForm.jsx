@@ -13,7 +13,7 @@ export default function SimpleForm() {
     return (
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Basic Form</Divider>
-            {loginSuccess && <Alert type="error" message="Error" description="There was an error on login"/>}
+            {loginSuccess && <Alert type="error" message="Error" description="There was an error on login" closable/>}
             <Form onFinish={onFinish}>
                 <Form.Item label="username" name="username">
                     <Input placeholder="enter username" required></Input>

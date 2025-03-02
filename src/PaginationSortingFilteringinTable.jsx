@@ -4,6 +4,8 @@ import { Table, Divider } from "antd";
 export default function PSFTable() {
     const [loading, setLoading] = useState(false);
     const [dataSource, setDataSource] = useState([]);
+    const [page, setpage] = useState(1);
+    const [pageSize, setPageSize] = useState(1);
 
     useEffect(() => {
         setLoading(true)
@@ -28,6 +30,9 @@ export default function PSFTable() {
             key:"2",
             title: 'User ID',
             dataIndex: 'userId',
+            sorter: (record1, record2) => {
+                return record1.userId > record2.userId
+            }
         },
         {
             key:"3",
@@ -35,13 +40,24 @@ export default function PSFTable() {
             dataIndex: 'completed',
             render: (completed) => {
                 return <p>{completed ? 'Complete' : 'In Progress'}</p>
+            },
+            filters: [
+                {text:'Complete', value:true},
+                {text:'In Progress', value:false}
+            ],
+            onFilter: (value, record) => {
+                return record.completed === value
             }
         },
     ]
     return (
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>P, S & F in Table</Divider>
-            <Table bordered loading={loading} columns={columns} dataSource={dataSource}></Table>
+            <Table bordered loading={loading} columns={columns} dataSource={dataSource} pagination={{pageSize:pageSize, current:page, onChange:(page, pageSize) => {
+                    setpage(page);
+                    setPageSize(pageSize)
+                }
+            }}></Table>
         </>
     )
 }

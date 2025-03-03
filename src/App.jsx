@@ -35,6 +35,7 @@ import TimeandDatePicking from './TimeandDate';
 import Spin from './Spinning';
 import ProgressBars from './Progress';
 import PSFTable from './PaginationSortingFilteringinTable';
+import CustomTable from './CustomTable';
 
 
 
@@ -152,6 +153,7 @@ const App = () => {
       <Spin />
       <ProgressBars />
       <PSFTable />
+      <CustomTable />
       
 
 

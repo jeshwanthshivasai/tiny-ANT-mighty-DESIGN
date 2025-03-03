@@ -36,6 +36,7 @@ import Spin from './Spinning';
 import ProgressBars from './Progress';
 import PSFTable from './PaginationSortingFilteringinTable';
 import CustomTable from './CustomTable';
+import AntIcons from './Icons';
 
 
 
@@ -154,6 +155,7 @@ const App = () => {
       <ProgressBars />
       <PSFTable />
       <CustomTable />
+      <AntIcons />
       
 
 

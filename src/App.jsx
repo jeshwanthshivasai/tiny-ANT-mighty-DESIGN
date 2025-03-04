@@ -37,6 +37,8 @@ import ProgressBars from './Progress';
 import PSFTable from './PaginationSortingFilteringinTable';
 import CustomTable from './CustomTable';
 import AntIcons from './Icons';
+import CRUDTable from './CRUDTable';
+import Searching from './SearchInTable';
 
 
 
@@ -156,6 +158,8 @@ const App = () => {
       <PSFTable />
       <CustomTable />
       <AntIcons />
+      <CRUDTable />
+      <Searching />
       
 
 

@@ -43,6 +43,7 @@ import AntTheming from './Theming';
 import Tablination from './TablePagination';
 import FileUpload from './FileUpload';
 import TaggyTags from './TaggyTags';
+import EditableTable from './EditableTable';
 
 
 
@@ -168,6 +169,7 @@ const App = () => {
       <Tablination />
       <FileUpload />
       <TaggyTags />
+      <EditableTable />
       
 
 

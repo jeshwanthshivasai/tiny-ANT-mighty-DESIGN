@@ -41,6 +41,7 @@ import CRUDTable from './CRUDTable';
 import Searching from './SearchInTable';
 import AntTheming from './Theming';
 import Tablination from './TablePagination';
+import FileUpload from './FileUpload';
 
 
 
@@ -164,6 +165,7 @@ const App = () => {
       <Searching />
       <AntTheming />
       <Tablination />
+      <FileUpload />
       
 
 

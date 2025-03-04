@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Table, Divider } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
 
 export default function PSFTable() {
     const [loading, setLoading] = useState(false);
@@ -47,7 +48,10 @@ export default function PSFTable() {
             ],
             onFilter: (value, record) => {
                 return record.completed === value
-            }
+            },
+            filterIcon: () => {
+                return <SearchOutlined />
+            },
         },
     ]
     return (

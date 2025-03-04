@@ -39,6 +39,7 @@ import CustomTable from './CustomTable';
 import AntIcons from './Icons';
 import CRUDTable from './CRUDTable';
 import Searching from './SearchInTable';
+import AntTheming from './Theming';
 
 
 
@@ -160,6 +161,7 @@ const App = () => {
       <AntIcons />
       <CRUDTable />
       <Searching />
+      <AntTheming />
       
 
 

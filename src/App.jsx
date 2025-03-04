@@ -42,6 +42,7 @@ import Searching from './SearchInTable';
 import AntTheming from './Theming';
 import Tablination from './TablePagination';
 import FileUpload from './FileUpload';
+import TaggyTags from './TaggyTags';
 
 
 
@@ -166,6 +167,7 @@ const App = () => {
       <AntTheming />
       <Tablination />
       <FileUpload />
+      <TaggyTags />
       
 
 

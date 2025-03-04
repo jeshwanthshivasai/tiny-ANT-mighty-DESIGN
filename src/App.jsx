@@ -44,6 +44,8 @@ import Tablination from './TablePagination';
 import FileUpload from './FileUpload';
 import TaggyTags from './TaggyTags';
 import EditableTable from './EditableTable';
+import Pagination from './Pagination';
+import PagePagination from './Pagination';
 
 
 
@@ -170,6 +172,7 @@ const App = () => {
       <FileUpload />
       <TaggyTags />
       <EditableTable />
+      <PagePagination />
       
 
 

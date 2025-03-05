@@ -47,6 +47,7 @@ import EditableTable from './EditableTable';
 import Pagination from './Pagination';
 import PagePagination from './Pagination';
 import Typing from './Typography';
+import MenuDemo from './Menu';
 
 
 
@@ -175,6 +176,7 @@ const App = () => {
       <EditableTable />
       <PagePagination />
       <Typing />
+      <MenuDemo />
       
 
 

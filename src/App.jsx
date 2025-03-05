@@ -46,6 +46,7 @@ import TaggyTags from './TaggyTags';
 import EditableTable from './EditableTable';
 import Pagination from './Pagination';
 import PagePagination from './Pagination';
+import Typing from './Typography';
 
 
 
@@ -173,6 +174,7 @@ const App = () => {
       <TaggyTags />
       <EditableTable />
       <PagePagination />
+      <Typing />
       
 
 

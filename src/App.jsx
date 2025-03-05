@@ -48,6 +48,7 @@ import Pagination from './Pagination';
 import PagePagination from './Pagination';
 import Typing from './Typography';
 import MenuDemo from './Menu';
+import TabbyTabs from './Tabs';
 
 
 
@@ -177,6 +178,7 @@ const App = () => {
       <PagePagination />
       <Typing />
       <MenuDemo />
+      <TabbyTabs />
       
 
 

@@ -50,6 +50,7 @@ import Typing from './Typography';
 import MenuDemo from './Menu';
 import TabbyTabs from './Tabs';
 import Avatars from './Avatar';
+import TaskProgress from './TaskProgress';
 
 
 
@@ -181,6 +182,7 @@ const App = () => {
       <MenuDemo />
       <TabbyTabs />
       <Avatars />
+      <TaskProgress />
       
 
 

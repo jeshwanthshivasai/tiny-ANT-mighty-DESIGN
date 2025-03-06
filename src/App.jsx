@@ -53,6 +53,11 @@ import Avatars from './Avatar';
 import TaskProgress from './TaskProgress';
 import Collapsing from './Collapse';
 import AppSideMenu from './AppSideMenu';
+import Switch from './Switch';
+import SwitchONOFF from './Switch';
+import Drawer from './Drawer';
+import DrawDrawer from './Drawer';
+import RateRating from './Rating';
 
 
 
@@ -187,6 +192,9 @@ const App = () => {
       <TaskProgress />
       <Collapsing />
       <AppSideMenu />
+      <SwitchONOFF />
+      <DrawDrawer />
+      <RateRating />
       
 
 
@@ -224,7 +232,7 @@ const App = () => {
       </Form> */}
 
 
-      <Divider style={{ marginBottom: '20px' }}>Form Validation</Divider>
+      <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Form Validation</Divider>
       <Form
         labelCol={{ span: 10 }}
         wrapperCol={{ span: 15 }}
@@ -368,7 +376,10 @@ const App = () => {
           </Button>
         </Form.Item>
       </Form>{' '}
-      <Divider style={{ marginBottom: '20px' }}>Dynamic Form</Divider>
+
+
+
+      <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Dynamic Form</Divider>
       <Form onFinish={onFinish1}>
         <Form.Item name={'teacher'} table="Teacher Name">
           <Input placeholder="Enter Teacher Name" />
@@ -436,7 +447,10 @@ const App = () => {
       <Button htmlType="submit" type="primary">
         Submit
       </Button>
-      <Divider style={{ marginBottom: '20px' }}>Reusable Form</Divider>
+
+
+
+      <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Reusable Form</Divider>
       <ReusableForm fields={formFields} onSubmit={handleSubmit} />
     </>
   );

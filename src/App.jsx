@@ -52,6 +52,7 @@ import TabbyTabs from './Tabs';
 import Avatars from './Avatar';
 import TaskProgress from './TaskProgress';
 import Collapsing from './Collapse';
+import AppSideMenu from './AppSideMenu';
 
 
 
@@ -185,6 +186,7 @@ const App = () => {
       <Avatars />
       <TaskProgress />
       <Collapsing />
+      <AppSideMenu />
       
 
 

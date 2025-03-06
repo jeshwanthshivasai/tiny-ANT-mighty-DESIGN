@@ -59,6 +59,7 @@ import Drawer from './Drawer';
 import DrawDrawer from './Drawer';
 import RateRating from './Rating';
 import AutomaticComplete from './AutoComplete';
+import CCalendar from './Calendar';
 
 
 
@@ -197,6 +198,7 @@ const App = () => {
       <DrawDrawer />
       <RateRating />
       <AutomaticComplete />
+      <CCalendar />
       
 
 

@@ -58,6 +58,7 @@ import SwitchONOFF from './Switch';
 import Drawer from './Drawer';
 import DrawDrawer from './Drawer';
 import RateRating from './Rating';
+import AutomaticComplete from './AutoComplete';
 
 
 
@@ -195,6 +196,7 @@ const App = () => {
       <SwitchONOFF />
       <DrawDrawer />
       <RateRating />
+      <AutomaticComplete />
       
 
 

@@ -22,7 +22,7 @@ export default function AppRouting() {
                 <Route path="/jobs" element={<Jobs/>}></Route>
                 <Route path="/dataview" element={<Dataview/>}></Route>
                 <Route path="/dataviz" element={<Dataviz/>}></Route>
-                <Route path="/" element={<Settings/>}></Route>
+                <Route path="/settings" element={<Settings/>}></Route>
             </Routes>
         </>
     )

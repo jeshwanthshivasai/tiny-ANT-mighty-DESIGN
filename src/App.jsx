@@ -44,7 +44,6 @@ import Tablination from './TablePagination';
 import FileUpload from './FileUpload';
 import TaggyTags from './TaggyTags';
 import EditableTable from './EditableTable';
-import Pagination from './Pagination';
 import PagePagination from './Pagination';
 import Typing from './Typography';
 import MenuDemo from './Menu';
@@ -53,13 +52,13 @@ import Avatars from './Avatar';
 import TaskProgress from './TaskProgress';
 import Collapsing from './Collapse';
 import AppSideMenu from './AppSideMenu';
-import Switch from './Switch';
 import SwitchONOFF from './Switch';
-import Drawer from './Drawer';
 import DrawDrawer from './Drawer';
 import RateRating from './Rating';
 import AutomaticComplete from './AutoComplete';
 import CCalendar from './Calendar';
+import AppHome from './AdminDashboard/AppHome';
+import Footer from './AdminDashboard/Footer';
 
 
 
@@ -199,6 +198,7 @@ const App = () => {
       <RateRating />
       <AutomaticComplete />
       <CCalendar />
+      <AppHome />
       
 
 

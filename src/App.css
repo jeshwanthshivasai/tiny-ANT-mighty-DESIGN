@@ -8,6 +8,7 @@
 
 .Header {
     height: 50px;
+    margin-left: 290px;
     display: flex;
     align-items: center;
     padding: 5px 20px 5px 12px;
@@ -19,6 +20,7 @@
 
 .Footer {
     height: 50px;
+    margin-left: 290px;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -50,9 +52,9 @@
     padding: 0 12px;
 }
 
-.SideMenuAndPageContent {
+/* .SideMenuAndPageContent {
     display: flex;
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
-}
+} */

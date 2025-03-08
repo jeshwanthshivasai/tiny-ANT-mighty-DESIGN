@@ -19,7 +19,7 @@ export default function SideMenu() {
                 </div>
                 <Menu
                 onClick={(item) => {
-                    navigate();
+                    navigate(item.key);
                 }}
                 mode="inline"
                 items={[

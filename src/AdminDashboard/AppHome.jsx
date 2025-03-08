@@ -10,11 +10,15 @@ export default function AppHome() {
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Admin Dashboard</Divider>
             <div className="App">
-                <Header />
+                {/* <Header />
                 <Space className="SideMenuAndPageContent">
                     <SideMenu />
                     <PageContent />
                 </Space>
+                <Footer /> */}
+                <Header />
+                <SideMenu />
+                <PageContent />
                 <Footer />
             </div>
         </>

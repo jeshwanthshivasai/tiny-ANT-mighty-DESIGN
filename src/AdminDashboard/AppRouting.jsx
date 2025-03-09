@@ -7,7 +7,7 @@ import User from "../Pages/User";
 import Inventory from "../Pages/Inventory";
 import Jobs from "../Pages/Jobs";
 import Dataview from "../Pages/Dataview";
-import Dataviz from "../Pages/Dataviz";
+import Data
 import Settings from "../Pages/Settings";
 
 export default function AppRouting() {
@@ -23,6 +23,7 @@ export default function AppRouting() {
                 <Route path="/dataview" element={<Dataview/>}></Route>
                 <Route path="/dataviz" element={<Dataviz/>}></Route>
                 <Route path="/settings" element={<Settings/>}></Route>
+                <Route path="/admin-dashboard" element={<AppHome />} />
             </Routes>
         </>
     )

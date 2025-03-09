@@ -1,14 +1,13 @@
 import React from "react";
 import { Button, Divider } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function MATNEXT() {
+    const navigate = useNavigate();
     return (
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>MATNEXT</Divider>
-            <Link to="/admindashboard">
-                <Button style={{marginTop: '10px'}}>GO TO MATNEXT</Button>
-            </Link>
+            <Button onClick={() => navigate("/dashboard")} style={{marginTop: '10px'}}>GO TO MATNEXT</Button>
         </>
     )
 }

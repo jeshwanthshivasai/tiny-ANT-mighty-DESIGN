@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Menu } from "antd";
+import { Menu } from "antd";
 import {HomeOutlined, DashboardOutlined, SearchOutlined, UserOutlined, BankOutlined, SolutionOutlined, AuditOutlined, BarChartOutlined, SettingOutlined} from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 

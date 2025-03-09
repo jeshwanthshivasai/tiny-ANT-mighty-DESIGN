@@ -7,7 +7,7 @@ export default function MATNEXT() {
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>MATNEXT</Divider>
             <Link to="/admindashboard">
-                <Button style={{marginTop: '10px', alignItems:'center', justifyContent: 'center'}}>GO TO MATNEXT</Button>
+                <Button style={{marginTop: '10px'}}>GO TO MATNEXT</Button>
             </Link>
         </>
     )

@@ -4,22 +4,24 @@ import Header from "./Header";
 import Footer from "./Footer";
 import SideMenu from "./SideMenu";
 import PageContent from "./PageContent";
+import AppRouting from "./AppRouting";
 
 export default function AppHome() {
     return (
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>Admin Dashboard</Divider>
             <div className="App">
-                {/* <Header />
+                <Header />
                 <Space className="SideMenuAndPageContent">
                     <SideMenu />
                     <PageContent />
+                    <AppRouting />
                 </Space>
-                <Footer /> */}
-                <Header />
-                <SideMenu />
-                <PageContent />
                 <Footer />
+                {/* <Header /> */}
+                {/* <SideMenu />
+                <PageContent /> */}
+                {/* <Footer /> */}
             </div>
         </>
     )

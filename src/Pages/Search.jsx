@@ -1,9 +1,12 @@
 import { Typography } from "antd";
+import { Link } from "react-router";
 
 export default function Search() {
     return (
         <>
-            <Typography.Text>Search</Typography.Text>
+            <Link to="/search">
+                <Typography.Text>Search</Typography.Text>
+            </Link>
         </>
     )
 } 

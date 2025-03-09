@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Divider } from "antd";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function MATNEXT() {
     return (

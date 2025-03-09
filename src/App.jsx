@@ -58,7 +58,6 @@ import RateRating from './Rating';
 import AutomaticComplete from './AutoComplete';
 import CCalendar from './Calendar';
 import AppHome from './AdminDashboard/AppHome';
-import Footer from './AdminDashboard/Footer';
 import MATNEXT from './MATNEXT';
 
 

@@ -1,10 +1,14 @@
 import React from "react";
-import { Divider } from "antd";
+import { Button, Divider } from "antd";
+import { Link } from "react-router";
 
 export default function MATNEXT() {
     return (
         <>
             <Divider style={{ marginBottom: '10px', color: 'red', borderColor:"red"}}>MATNEXT</Divider>
+            <Link to="/admindashboard">
+                <Button style={{marginTop: '10px', alignItems:'center', justifyContent: 'center'}}>GO TO MATNEXT</Button>
+            </Link>
         </>
     )
 }

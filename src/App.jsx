@@ -199,7 +199,7 @@ const App = () => {
       <AutomaticComplete />
       <CCalendar />
       <MATNEXT />
-      <AppHome />
+      {/* <AppHome /> */}
       
 
 

@@ -14,7 +14,9 @@ export default function AppHome() {
                 <Header />
                 <Space className="SideMenuAndPageContent">
                     <SideMenu />
-                    <PageContent />
+                    <PageContent>
+                        <AppRouting/>
+                    </PageContent>
                 </Space>
                 <Footer />
                 {/* <Header /> */}

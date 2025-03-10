@@ -5,9 +5,8 @@ import { Link } from "react-router";
 export default function Dataviz() {
     return (
         <>
-            <Link to="/dataviz">
-                <Typography.Text>Dataviz</Typography.Text>
-            </Link>
+        <div>DataViz</div>
+                {/* <Typography.Text>Dataviz</Typography.Text> */}
         </>
     )
 }

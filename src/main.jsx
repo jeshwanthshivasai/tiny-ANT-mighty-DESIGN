@@ -9,12 +9,14 @@ import AppHome from './AdminDashboard/AppHome.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
+  <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/admin-dashboard" element={<AppHome />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+    </>
+  // </StrictMode>
 );

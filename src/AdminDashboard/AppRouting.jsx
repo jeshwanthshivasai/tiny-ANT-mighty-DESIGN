@@ -16,7 +16,7 @@ export default function AppRouting() {
         <>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
-                <Route path="/dashboard" element={<Dashboard/>}></Route>
+                <Route path="dashboard" element={<Dashboard/>}></Route>
                 <Route path="/search" element={<Search/>}></Route>
                 <Route path="/user" element={<User/>}></Route>
                 <Route path="/user" element={<Inventory/>}></Route>

@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function Dataview() {
     return (
         <>
-            <Link to="dataview">
+            <Link to="/dataview">
                 <Typography.Text>Dataview</Typography.Text>
             </Link>
         </>

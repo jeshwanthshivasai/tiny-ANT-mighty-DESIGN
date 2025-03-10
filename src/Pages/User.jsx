@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function User() {
     return (
         <>
-            <Link to="/dashboard">
+            <Link to="/user">
                 <Typography.Text>User</Typography.Text>
             </Link>
         </>

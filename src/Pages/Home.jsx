@@ -5,8 +5,8 @@ import { Link } from "react-router";
 export default function Home() {
     return (
         <>
-            <Link to="/home">
-            <Typography.Text>Home</Typography.Text>
+            <Link to="/">
+                <Typography.Text>Home</Typography.Text>
             </Link>
         </>
     )

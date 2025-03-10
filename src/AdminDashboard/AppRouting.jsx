@@ -24,7 +24,6 @@ export default function AppRouting() {
                 <Route path="/dataview" element={<Dataview/>}></Route>
                 <Route path="/dataviz" element={<Dataviz/>}></Route>
                 <Route path="/settings" element={<Settings/>}></Route>
-                <Route path="/admin-dashboard" element={<AppHome />} />
             </Routes>
         </>
     )

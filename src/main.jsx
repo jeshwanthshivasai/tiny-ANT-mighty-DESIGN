@@ -5,12 +5,16 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import './App.css'
 import App from './App.jsx';
-import { BrowserRouter } from 'react-router-dom';
+import AppHome from './AdminDashboard/AppHome.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/admin-dashboard" element={<AppHome />} />
+      </Routes>
     </BrowserRouter>
   </StrictMode>
 );

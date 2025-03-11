@@ -75,7 +75,7 @@ export default function SideMenu() {
                 mode="inline"
                 items={[
                     {label: 'Home', key:'/', icon: <HomeOutlined />},
-                    {label: 'Dashboard', key:'/dashboard', icon: <DashboardOutlined/> },
+                    {label: 'Dashboard', key:'/admin-dashboard', icon: <DashboardOutlined/> },
                     {label: 'Search', key:'/search', icon: <SearchOutlined />},
                     {label: 'User', key:'/user', icon: <UserOutlined />},
                     {label: 'Inventory', key:'/inventory', icon: <BankOutlined/>},

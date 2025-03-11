@@ -15,7 +15,7 @@ export default function AppHome() {
                 <Space className="SideMenuAndPageContent">
                     <SideMenu />
                     <PageContent>
-                        {/* <AppRouting/> */}
+                        <AppRouting/>
                     </PageContent>
                 </Space>
                 <Footer />
